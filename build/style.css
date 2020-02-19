@@ -3,14 +3,25 @@ html {
 }
 body {
   margin: 0;
+  background: linear-gradient(to right bottom, #051937, #004166, #006d8c, #009ba2, #00c9a7);
+  height: 100vh;
 }
 .name {
   text-align: center;
-  color: #7c795d;
+  color: white;
   font-family: "Trocchi", serif;
   font-size: 45px;
   font-weight: normal;
   line-height: 48px;
+}
+
+#tech-student {
+  text-align: center;
+  color: white;
+  font-family: "Trocchi", serif;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 25px;
 }
 .toggleNav {
   display: none;
@@ -31,6 +42,7 @@ a {
 a:hover {
   background: #4caf50;
 }
+
 
 .toggleNav {
   background-color: #333;
