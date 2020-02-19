@@ -3,7 +3,14 @@ html {
 }
 body {
   margin: 0;
-  background: linear-gradient(to right bottom, #051937, #004166, #006d8c, #009ba2, #00c9a7);
+  background: linear-gradient(
+    to right bottom,
+    #051937,
+    #004166,
+    #006d8c,
+    #009ba2,
+    #00c9a7
+  );
   height: 100vh;
 }
 .name {
@@ -23,6 +30,22 @@ body {
   font-weight: normal;
   line-height: 25px;
 }
+
+.main-content {
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0 auto;
+  width: 60%;
+  padding: 20px 10px;
+}
+
+.main-content p {
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+  size: 10em;
+  font-family: 'Arial', Helvetica, sans-serif;
+}
 .toggleNav {
   display: none;
 }
@@ -32,17 +55,16 @@ a {
   font-weight: 100;
   letter-spacing: 2px;
   text-decoration: none;
-  padding: 20px 5px;
+  padding: 20px 0px;
   display: inline-block;
   width: 100%;
   text-align: center;
-  transition: all 0.5s;
 }
 
 a:hover {
   background: #4caf50;
+  transition: all 0.5s;
 }
-
 
 .toggleNav {
   background-color: #333;
@@ -60,6 +82,24 @@ a:hover {
 .top-nav li {
   margin: 0;
   flex: 1 1 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #333;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-right: 10%;
+  text-align: end;
+  height: 5vh;
+  position: fixed;
+}
+
+footer p {
+  color: white;
+  padding: 10px 10px;
 }
 
 @media all and (max-width: 500px) {
