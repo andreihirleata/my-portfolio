@@ -140,6 +140,13 @@ footer p {
   color: white;
 }
 
+.mailForm {
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
+  padding: 10px;
+  display: block;
+}
 @media all and (max-width: 500px) {
   .top-nav ul {
     display: none;
