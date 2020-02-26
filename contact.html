@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="build/style.css">
+    <script src="js/form.js"></script>
     <title>Contact</title>
 </head>
 
@@ -32,35 +33,25 @@
                 </ul>
             </nav>
 
-            <!-- <div class="mailForm">
-                <form action=”mailto:hirleata.andrei@gmail.com” method=”POST” enctype=”multipart/form-data”
-                    name=”EmailForm”>
-
-                    Name:<br>
-
-                    <input type=”text” size=”19″ name=Andrei><br><br>
-
-                    Message:<br> <textarea name=”ContactCommentt” rows=”6″ cols=”20″>
-
-</textarea><br><br> <input type="button" value="Submit"> </form> -->
-
             <div class="contact-form">
-                <form  action="https://formspree.io/mdozgjdq"
-                method="POST">
-                <label>Name
-                    <input type="text" name="name">
-                </label>
-                <label>
-                    Email
-                    <input type="text" name="email">
-                  </label>
-                  <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                  </label>
-                  <button type="submit">Send</button>
+                <h1 id="contactID">Get in touch !</h1>
+                <form>
+
+                    <label>
+                        <input type="text" name="name" class="formField" id="formName" placeholder="Name">
+                    </label> <br> <br>
+                    <label>
+
+                        <input type="text" name="email" class="formField" id="formEmail" placeholder="Email">
+                    </label> <br> <br>
+                    <label>
+
+                        <textarea name="message" class="formField" id="formMessage" placeholder="Message"></textarea>
+                    </label><br> <br>
+                    <input onclick="displayForm()" type="submit" value="Submit" id="submitBtn">
+                    <input onclick="clearform()" type="reset" value="Reset" id="clearBtn">
                 </form>
-                <script src="js/form.js"></script>
+
             </div>
         </div>
     </div>
